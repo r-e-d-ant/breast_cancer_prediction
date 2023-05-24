@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <title>Breast Cancer form</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row d-flex align-items-center h-100"></div>
+            <div class="col-md-8 mx-auto">
+                <form class="mb-5" method="POST">
+                    {% csrf_token %}
+                    <h1 class="text-center gray">Breast Cancer Prediction</h1>
+
+                    <div class="row m-5">
+                        <div class="col col-4">
+                            <label for="">
+                                Radius mean
+                            </label>
+                            <input type="number" class="form-control" name="radius_mean" required>
+                        </div>
+                        <div class="col col-4">
+                            <label for="">
+                                Texture mean
+                            </label>
+                            <input type="number" class="form-control" name="texture_mean" required>
+                        </div>
+                        <div class="col col-4">
+                            <label for="">
+                                Perimeter mean
+                            </label>
+                            <input type="number" class="form-control" name="perimeter_mean" required>
+                        </div>
+                        <div class="col col-4">
+                            <label for="">
+                                Area mean
+                            </label>
+                            <input type="number" class="form-control" name="area_mean" required>
+                        </div>
+                        <div class="col col-4">
+                            <label for="">
+                                Smoothness mean
+                            </label>
+                            <input type="number" class="form-control" name="smoothness_mean" required>
+                        </div>
+                    </div>
+                    <div class="row m-5">
+                        <div class="col col-4">
+                            <label for="">
+                                Compactness mean
+                            </label>
+                            <input type="number" class="form-control" name="compactness_mean" required>
+                        </div>
+                        <div class="col col-4">
+                            <label for="">
+                                Concavity mean
+                            </label>
+                            <input type="number" class="form-control" name="concavity_mean" required>
+                        </div>
+                        <div class="col col-4">
+                            <label for="">
+                                Concave point mean
+                            </label>
+                            <input type="number" class="form-control" name="concave_points_mean" required>
+                        </div>
+                        <div class="col col-4">
+                            <label for="">
+                                Symmetry Mean
+                            </label>
+                            <input type="number" class="form-control" name="symmetry_mean" required>
+                        </div>
+                        <div class="col col-4">
+                            <label for="">
+                                Fractal dimension Mean
+                            </label>
+                            <input type="number" class="form-control" name="fractal_dimension_mean" required>
+                        </div>
+                        <div class="col col-4">
+                            <label for="">
+                                 Radius_se
+                            </label>
+                            <input type="number" class="form-control" name="radius_se" required>
+                        </div>
+                    </div>
+                    <div class="row m-5">
+                        <div class="col col-4">
+                            <label for="">
+                                Texture_se
+                            </label>
+                            <input type="number" class="form-control" name="texture_se" required>
+                        </div>
+                        <div class="col col-4">
+                            <label for="">
+                                Perimeter_se
+                            </label>
+                            <input type="number" class="form-control" name="perimeter_se" required>
+                        </div>
+                        <div class="col col-4">
+                            <label for="">
+                            Area_se
+                            </label>
+                            <input type="number" class="form-control" name="area_se" required>
+                        </div>
+                        <div class="col col-4">
+                            <label for="">
+                            Smoothness_se
+                            </label>
+                            <input type="number" class="form-control" name="smoothness_se" required>
+                        </div>
+                        <div class="col col-4">
+                            <label for="">
+                            Compactness_se
+                            </label>
+                            <input type="number" class="form-control" name="compactness_se" required>
+                        </div>
+                    </div>
+                    <div class="row m-5">
+                        <div class="col col-4">
+                            <label for="">
+                            Concavity_se
+                            </label>
+                            <input type="number" class="form-control" name="concavity_se" required>
+                        </div>
+                        <div class="col col-4">
+                            <label for="">
+                            Concave_Points_se
+                            </label>
+                            <input type="number" class="form-control" name="concave_points_se" required>
+                        </div>
+                        <div class="col col-4">
+                            <label for="">
+                           Symmetry_se
+                            </label>
+                            <input type="number" class="form-control" name="Symmetry_se" required>
+                        </div>
+                        <div class="col col-4">
+                            <label for="">
+                               Fractal_dimesion_se 
+                            </label>
+                            <input type="number" class="form-control" name="Fractal_dimesion_se" required>
+                        </div>
+                        <div class="col col-4">
+                            <label for="">
+                                Radius_worst
+                            </label>
+                            <input type="number" class="form-control" name="Radius_worst" required>
+                        </div>
+                    </div>
+                    <div class="row m-5">
+                        <div class="col col-4">
+                            <label for="">
+                                Texture_worst
+                            </label>
+                            <input type="number" class="form-control" name="Texture_worst" required>
+                        </div>
+                        <div class="col col-4">
+                            <label for="">
+                                Perimeter_worst
+                            </label>
+                            <input type="number" class="form-control" name="Perimeter_worst" required>
+                        </div>
+                        <div class="col col-4">
+                            <label for="">
+                                Area_worst
+                            </label>
+                            <input type="number" class="form-control" name="Area_worst" required>
+                        </div>
+                        <div class="col col-4">
+                            <label for="">
+                                Smoothness_worst
+                            </label>
+                            <input type="number" class="form-control" name="Smoothness_worst" required>
+                        </div>
+                        <div class="col col-4">
+                            <label for="">
+                                Compactness_worst
+                            </label>
+                            <input type="numebr" class="form-control" name="Compactness_worst" required>
+                        </div>
+                    </div>
+                    <div class="row m-5">
+                        <div class="col col-4">
+                            <label for="">
+                                Concavity_worst
+                            </label>
+                            <input type="number" class="form-control" name="Concavity_worst" required>
+                        </div>
+                        <div class="col col-4">
+                            <label for="">
+                                Concave_points_worst
+                            </label>
+                            <input type="number" class="form-control" name="Concave_points_worst" required>
+                        </div>
+                        <div class="col col-4">
+                            <label for="">
+                                 Symmetry_worst
+                            </label>
+                            <input type="number" class="form-control" name="Symmetry_worst" required>
+                        </div>
+                        <div class="col col-4">
+                            <label for="">
+                                    Fractal_dimension_worst
+                            </label>
+                            <input type="number" class="form-control" name="Fractal_dimension_worst" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <button type="submit" class="btn btn-primary col-sm-4 mx-auto">Submit</button>
+                        <div class="col-sm-4 mx-auto">Result: <h2>{{ prediction }}</h2></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+# Byte-compiled / optimized Python code
+*.pyc
+__pycache__/
+
+# Django-related files
+*.log
+*.pot
+db.sqlite3
+media/
+
+# Directories created by Django
+/migrations/
+/__pycache__/
