@@ -1,2 +1,2 @@
-# breast_cancer_prediction
+# breast cancer prediction
 Breast Cancer Prediction AI
